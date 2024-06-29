@@ -30,7 +30,8 @@ class TreatmentsRelationManager extends RelationManager
                 Forms\Components\TextInput::make('price')
                 ->numeric()
                 ->prefix('€')
-                ->maxValue(42949672.95),
+                ->maxValue(42949672.95)
+                ->minValue(0),
             ]);
     }
 
